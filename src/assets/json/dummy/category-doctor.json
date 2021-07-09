@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "category": "dokter umum"
+    },
+    {
+      "id": 2,
+      "category": "dokter saraf"
+    },
+    {
+      "id": 3,
+      "category": "dokter gigi"
+    },
+    {
+      "id": 4,
+      "category": "dokter mata"
+    },
+    {
+      "id": 5,
+      "category": "dokter saraf"
+    }
+  ]
+}
