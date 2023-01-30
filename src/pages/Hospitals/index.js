@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {ImageBackground, StyleSheet, Text, View} from 'react-native';
+import {ImageBackground, StyleSheet, Text, View, Linking} from 'react-native';
 import {ILHospitalBG} from '../../assets';
 import {ListHospital} from '../../components';
 import {Fire} from '../../config';
@@ -23,7 +23,7 @@ const Hospitals = () => {
   return (
     <View style={styles.page}>
       <ImageBackground source={ILHospitalBG} style={styles.background}>
-        <Text style={styles.title}>Nearby Hospitals</Text>
+        <Text style={styles.title}>Rumah Sakit Terdekat</Text>
         <Text style={styles.desc}>3 tersedia</Text>
       </ImageBackground>
       <View style={styles.content}>
@@ -35,6 +35,7 @@ const Hospitals = () => {
               name={item.name}
               address={item.address}
               pic={item.image}
+              onPress={() => Linking.openURL(`${item.link}`, item)}
             />
           );
         })}

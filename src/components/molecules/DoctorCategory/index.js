@@ -1,21 +1,34 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity} from 'react-native';
-import {ILCatGigi, ILCatMata, ILCatSaraf, ILCatUmum} from '../../../assets';
+import {
+  ILCatAnak,
+  ILCatCovid,
+  ILCatGigi,
+  ILCatMata,
+  ILCatSaraf,
+  ILCatUmum,
+} from '../../../assets';
 import {colors, fonts} from '../../../utils';
 
 const DoctorCategory = ({category, onPress}) => {
   const Icon = () => {
-    if (category === 'dokter umum') {
+    if (category === 'Dokter Covid-19') {
+      return <ILCatCovid style={styles.illustration} />;
+    }
+    if (category === 'Dokter Umum') {
       return <ILCatUmum style={styles.illustration} />;
     }
-    if (category === 'dokter saraf') {
+    if (category === 'Dokter Saraf') {
       return <ILCatSaraf style={styles.illustration} />;
     }
-    if (category === 'dokter gigi') {
+    if (category === 'Dokter Gigi') {
       return <ILCatGigi style={styles.illustration} />;
     }
-    if (category === 'dokter mata') {
+    if (category === 'Dokter Mata') {
       return <ILCatMata style={styles.illustration} />;
+    }
+    if (category === 'Dokter Anak') {
+      return <ILCatAnak style={styles.illustration} />;
     }
     return <ILCatUmum style={styles.illustration} />;
   };
@@ -37,8 +50,8 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-start',
     borderRadius: 10,
     marginRight: 10,
-    width: 100,
-    height: 130,
+    width: 120,
+    height: 150,
   },
   illustration: {
     marginBottom: 28,

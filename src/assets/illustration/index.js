@@ -5,6 +5,8 @@ import ILCatUmum from './cat-dok-umum.svg';
 import ILCatSaraf from './cat-dok-saraf.svg';
 import ILCatGigi from './cat-dok-gigi.svg';
 import ILCatMata from './cat-dok-mata.svg';
+import ILCatCovid from './cat-dok-covid.svg';
+import ILCatAnak from './cat-dok-anak.svg';
 import ILHospitalBG from './hospitals-background.png';
 
 export {
@@ -15,5 +17,7 @@ export {
   ILCatSaraf,
   ILCatGigi,
   ILCatMata,
+  ILCatCovid,
+  ILCatAnak,
   ILHospitalBG,
 };

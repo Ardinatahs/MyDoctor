@@ -2,23 +2,27 @@
   "data": [
     {
       "id": 1,
-      "category": "dokter umum"
+      "category": "dokter covid-19"
     },
     {
       "id": 2,
-      "category": "dokter saraf"
+      "category": "dokter umum"
     },
     {
       "id": 3,
-      "category": "dokter gigi"
+      "category": "dokter saraf"
     },
     {
       "id": 4,
-      "category": "dokter mata"
+      "category": "dokter gigi"
     },
     {
       "id": 5,
-      "category": "dokter saraf"
+      "category": "dokter mata"
+    },
+    {
+      "id": 6,
+      "category": "dokter anak"
     }
   ]
 }
